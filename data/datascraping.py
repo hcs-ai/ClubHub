@@ -1,20 +1,42 @@
 import requests
 from bs4 import BeautifulSoup
+import os
+from urllib.parse import urljoin
 
-# URL of the website you want to scrape
-url = "https://hcsaigroup.org/"
+def scrape_page(url):
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.content, 'html.parser')
+        return soup.prettify()
+    except requests.RequestException as e:
+        print(f"Error scraping {url}: {e}")
+        return None
 
-# Send a GET request to the URL
-response = requests.get(url)
+def save_content(content, filename):
+    with open("data/" + filename, 'w', encoding='utf-8') as file:
+        file.write(content)
 
-# Create a BeautifulSoup object to parse the HTML content
-soup = BeautifulSoup(response.content, 'html.parser')
+def main():
+    base_url = "https://www.hcsaigroup.org/"
+    main_page = scrape_page(base_url)
+    
+    if main_page:
+        save_content(main_page, "main_page.html")
+        
+        soup = BeautifulSoup(main_page, 'html.parser')
+        links = soup.find_all('a', href=True)
+        
+        for link in links:
+            href = link['href']
+            full_url = urljoin(base_url, href)
+            
+            if full_url.startswith(base_url):
+                page_content = scrape_page(full_url)
+                if page_content:
+                    filename = f"{href.strip('/').replace('/', '_')}.html"
+                    save_content(page_content, filename)
+                    print(f"Scraped and saved: {full_url}")
 
-# Find the body tag
-body = soup.find('body')
-
-# Check if body
-if body:
-    # Print the formatted HTML
-    with open("data.txt", "w") as file:
-        file.write(soup.prettify())
+if __name__ == "__main__":
+    main()
