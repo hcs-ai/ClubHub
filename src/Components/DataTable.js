@@ -1,53 +1,77 @@
 import React, { useEffect, useState } from 'react';
-import Papa from 'papaparse'; //Parsing csv
+import { db } from '../firebase';
+import { collection, getDocs } from 'firebase/firestore';
+import './DataTable.css';
 
 const DataTable = () => {
     const [data, setData] = useState([]);
-  
+    const [searchTerm, setSearchTerm] = useState('');
+    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
-      const fetchData = async () => {
-        //Loading in the data.csv file 
-        const response = await fetch('/data.csv');
-        const reader = response.body.getReader();
-        const decoder = new TextDecoder('utf-8');
-        const { value } = await reader.read();
-        const csv = decoder.decode(value);
-        
-        // Here, we parse CSV data
-        Papa.parse(csv, {
-          header: true,     
-          skipEmptyLines: true, // Ignore empty rows
-          complete: (results) => {
-            setData(results.data); // Save parsed data to state
-          },
-        });
-      };
-  
-      fetchData();
+        const fetchData = async () => {
+            try {
+                const clubsCollection = collection(db, 'clubs');
+                const clubSnapshot = await getDocs(clubsCollection);
+                const clubList = clubSnapshot.docs.map(doc => ({
+                    id: doc.id,
+                    ...doc.data()
+                }));
+                setData(clubList);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchData();
     }, []);
 
-  return (
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-      <tbody>
-        {data.map((item) => (
-          <tr key={item.id}>
-            <td>{item.id}</td>
-            <td>{item.name}</td>
-            <td>{item.age}</td>
-            <td>{item.location}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
+    const filteredData = data.filter(item =>
+        item.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        item.description?.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    if (loading) return <div>Loading...</div>;
+
+    return (
+        <div className="data-table-container">
+            <input
+                type="text"
+                placeholder="Search clubs..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="search-input"
+            />
+            <table className="data-table">
+                <thead>
+                    <tr>
+                        <th>Club</th>
+                        <th>Description</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {filteredData.map((item) => (
+                        <tr key={item.id}>
+                            <td>{item.name}</td>
+                            <td>{item.description}</td>
+                            <td>
+                                {item.link && (
+                                    <a href={item.link} 
+                                       target="_blank" 
+                                       rel="noopener noreferrer">
+                                        Visit
+                                    </a>
+                                )}
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
+    );
 };
 
 export default DataTable;
