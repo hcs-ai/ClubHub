@@ -1,6 +1,7 @@
 {
   "name": "ClubHub",
   "version": "0.1.0",
+  "homepage": "https://hcs-ai.github.io/ClubHub",
   "private": true,
   "homepage": ".",
   "dependencies": {
@@ -8,7 +9,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "cross-env": "^7.0.3",
-    "firebase": "^11.0.2",
+    "firebase": "^11.1.0",
     "papaparse": "^5.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -16,6 +17,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "cross-env BUILD_PATH='./docs' react-scripts build",
     "test": "react-scripts test",
@@ -38,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-private-property-in-object": "^7.25.9",
+    "gh-pages": "^6.3.0"
   }
 }

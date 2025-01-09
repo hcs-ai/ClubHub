@@ -1,23 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import { db } from '../firebase';
-import { collection, getDocs } from 'firebase/firestore';
+import { database } from "./firebase";
+import { ref, get } from "firebase/database";
 import './DataTable.css';
 
-const DataTable = () => {
+const StudentClubs = () => {
     const [data, setData] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchClubs = async () => {
             try {
-                const clubsCollection = collection(db, 'clubs');
-                const clubSnapshot = await getDocs(clubsCollection);
-                const clubList = clubSnapshot.docs.map(doc => ({
-                    id: doc.id,
-                    ...doc.data()
-                }));
-                setData(clubList);
+                const clubsRef = ref(database, "clubhub");
+                const snapshot = await get(clubsRef);
+
+                if (snapshot.exists()) {
+                    setData(Object.values(snapshot.val()));
+                } else {
+                    console.log("No data available");
+                }
+
             } catch (error) {
                 console.error('Error fetching data:', error);
             } finally {
@@ -25,12 +27,12 @@ const DataTable = () => {
             }
         };
 
-        fetchData();
+        fetchClubs();
     }, []);
 
     const filteredData = data.filter(item =>
-        item.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        item.description?.toLowerCase().includes(searchTerm.toLowerCase())
+        item.Club?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        item.Description?.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
     if (loading) return <div>Loading...</div>;
@@ -53,15 +55,15 @@ const DataTable = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {filteredData.map((item) => (
-                        <tr key={item.id}>
-                            <td>{item.name}</td>
-                            <td>{item.description}</td>
+                    {filteredData.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.Club}</td>
+                            <td>{item.Description}</td>
                             <td>
-                                {item.link && (
-                                    <a href={item.link} 
-                                       target="_blank" 
-                                       rel="noopener noreferrer">
+                                {item.Link && (
+                                    <a href={item.Link}
+                                        target="_blank"
+                                        rel="noopener noreferrer">
                                         Visit
                                     </a>
                                 )}
@@ -74,4 +76,4 @@ const DataTable = () => {
     );
 };
 
-export default DataTable;
+export default StudentClubs;
