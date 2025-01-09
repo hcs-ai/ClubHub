@@ -51,6 +51,7 @@ const StudentClubs = () => {
                     <tr>
                         <th>Club</th>
                         <th>Description</th>
+                        <th>Category</th>
                         <th>Link</th>
                     </tr>
                 </thead>
@@ -59,6 +60,7 @@ const StudentClubs = () => {
                         <tr key={index}>
                             <td>{item.Club}</td>
                             <td>{item.Description}</td>
+                            <td>{item.Category}</td>
                             <td>
                                 {item.Link && (
                                     <a href={item.Link}
