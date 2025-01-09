@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+  </script>
+  <script defer="" src="header.js" type="text/javascript">
+  </script>
+  <link href="no-scrollbar.css" rel="stylesheet"/>
+ </head>
+ <title>
+  HCS AI Group
+ </title>
+ <body class="bg-gray-900 text-slate-200 no-scrollbar hidden">
+  <div>
+   <div id="HeaderPlaceholder">
+   </div>
+   <div class="relative isolate px-6 pt-14 lg:px-8">
+    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+     <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewbox="0 0 1155 678">
+      <path d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3">
+      </path>
+      <defs>
+       <lineargradient gradientunits="userSpaceOnUse" id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645">
+        <stop stop-color="#9089FC">
+        </stop>
+        <stop offset="1" stop-color="#FF80B5">
+        </stop>
+       </lineargradient>
+      </defs>
+     </svg>
+    </div>
+    <div class="mx-auto max-w-2xl py-14 sm:py-28 lg:py-34">
+     <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+      <!--
+        <div class="relative rounded-full py-1 px-3 text-sm leading-6 text-slate-200 ring-1 ring-slate-400 hover:ring-slate-900/20">
+          Announcing our latest initiative <a href="https://www.claudinegpt.com" target="_blank" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>ClaudineGPT<span aria-hidden="true">&rarr;</span></a>
+        </div>
+        -->
+      <!--
+        <div class="relative rounded-full py-1 px-3 text-sm leading-6 text-slate-200 ring-1 ring-slate-400 hover:ring-slate-900/20">
+          Announcing our latest initiative <a href="/gpt4" target="_blank" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>GPT4All<span aria-hidden="true">&rarr;</span></a>
+        </div>
+        -->
+      <!--
+        <div class="relative rounded-full py-1 px-3 text-sm leading-6 text-slate-200 ring-1 ring-slate-400 hover:ring-slate-900/20">
+          Attend the <a href="/wendell2023" target="_blank" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Wendell AI Fellowship intro meeting<span aria-hidden="true">&rarr;</span></a>
+        </div>
+        -->
+      <!--
+        <div class="relative rounded-full py-1 px-3 text-sm leading-6 text-slate-200 ring-1 ring-slate-400 hover:ring-slate-900/20">
+          Keep up with the <a href="/events" target="_blank" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Wendell AI Fellowship<span aria-hidden="true">&rarr;</span></a>
+        </div>
+        -->
+      <div class="relative rounded-full py-1 px-3 text-sm leading-6 text-slate-200 ring-1 ring-slate-400 hover:ring-slate-900/20">
+       Keep up with our
+       <a class="font-semibold text-indigo-600" href="/events" target="_blank">
+        <span aria-hidden="true" class="absolute inset-0">
+        </span>
+        Speaker Series
+        <span aria-hidden="true">
+         →
+        </span>
+       </a>
+      </div>
+     </div>
+     <div class="text-center">
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900l">
+       Harvard Computer Society
+      </h1>
+      <h1 class="text-8xl font-bold tracking-tight text-gray-900l">
+       AI Group
+      </h1>
+      <p class="mt-6 text-lg leading-8 text-gray-600l">
+       Harvard, at the cutting edge of artificial intelligence. Welcome to all.
+      </p>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+       <a class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" href="https://bit.ly/hcsaigroup">
+        Join us
+       </a>
+       <a class="text-sm font-semibold leading-6 text-gray-900l" href="/about">
+        Learn more
+        <span aria-hidden="true">
+         →
+        </span>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!--    <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">-->
+    <!--      <svg class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">-->
+    <!--        <path fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />-->
+    <!--        <defs>-->
+    <!--          <linearGradient id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">-->
+    <!--            <stop stop-color="#9089FC" />-->
+    <!--            <stop offset="1" stop-color="#FF80B5" />-->
+    <!--          </linearGradient>-->
+    <!--        </defs>-->
+    <!--      </svg>-->
+    <!--    </div>-->
+   </div>
+   <div id="FooterPlaceholder">
+   </div>
+  </div>
+ </body>
+</html>
+<!-- <script defer>
+  $(document).ready(function() {
+  document.getElementsByTagName("body")[0].style.visibility = "visible";
+});
+</script> -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+  </script>
+  <script defer="" src="header.js" type="text/javascript">
+  </script>
+  <link href="no-scrollbar.css" rel="stylesheet"/>
+  <title>
+   Events | HCS AI Group
+  </title>
+ </head>
+ <body class="bg-gray-900 text-slate-200 no-scrollbar hidden">
+  <div>
+   <div id="HeaderPlaceholder">
+   </div>
+   <div class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+     <svg aria-hidden="true" class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]">
+      <defs>
+       <pattern height="200" id="e813992c-7d03-4cc4-a2bd-151760b470a0" patternunits="userSpaceOnUse" width="200" x="50%" y="-1">
+        <path d="M100 200V.5M.5 .5H200" fill="none">
+        </path>
+       </pattern>
+      </defs>
+      <svg class="overflow-visible fill-gray-800" x="50%" y="-1">
+       <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0">
+       </path>
+      </svg>
+      <rect class="opacity-50" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" height="100%" stroke-width="0" width="100%">
+      </rect>
+     </svg>
+    </div>
+    <!-- <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-1 lg:items-start lg:gap-y-10"> -->
+    <div>
+     <!-- Current Events -->
+     <div>
+      <h1 class="text-center text-5xl font-bold tracking-tight text-slate-200">
+       Upcoming Events
+      </h1>
+     </div>
+     <div class="mt-6">
+      <div class="text-center leading-7 text-slate-200">
+       More events coming soon!
+      </div>
+     </div>
+     <!-- <div class="mt-6 grid grid-cols-1 mt-6 justify-items-center">
+        <div class="w-4/5 max-w-screen-xl grid lg:grid-cols-3 grid-cols-1 gap-6">
+
+        </div>
+      </div> -->
+    </div>
+    <!-- Past Events -->
+    <div>
+     <div class="mt-12">
+      <div>
+       <h1 class="text-center text-5xl font-bold tracking-tight text-slate-200">
+        Past Events
+       </h1>
+      </div>
+     </div>
+     <div class="mt-6 grid grid-cols-1 mt-6 justify-items-center">
+      <div class="w-4/5 max-w-screen-xl grid lg:grid-cols-3 grid-cols-1 gap-6">
+       <div class="col-span-1">
+        <div class="w-full h-full leading-7 text-slate-200 lg:max-w-2xl lg:mx-auto">
+         <a class="text-sm text-white bg-indigo-600 hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-full h-full rounded-md px-3.5 py-3.5 flex items-center justify-center" href="/2024_aispringtour">
+          <div>
+           <h5 class="text-center mb-2 text-2xl font-normal tracking-tight">
+            2024 Spring AI Tour
+           </h5>
+           <!-- <p class="text-center">Spring 2024</p> -->
+          </div>
+         </a>
+        </div>
+       </div>
+       <div class="col-span-1">
+        <div class="w-full h-full leading-7 text-slate-200 lg:max-w-2xl lg:mx-auto">
+         <a class="text-sm text-white bg-emerald-700 hover:bg-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 w-full h-full rounded-md px-3.5 py-3.5 flex items-center justify-center" href="/socialpolicy">
+          <div>
+           <h5 class="text-center text-l font-normal tracking-tight">
+            Speaker Series
+           </h5>
+           <h5 class="text-center mb-2 text-xl font-normal tracking-tight">
+            Algorithms and ML for Computational Social Policy
+           </h5>
+           <p class="text-center">
+            2024-02-07
+            <br/>
+            7:30 pm
+            <br/>
+            Zoom
+           </p>
+          </div>
+         </a>
+        </div>
+       </div>
+       <div class="col-span-1">
+        <div class="w-full h-full leading-7 text-slate-200 lg:max-w-2xl lg:mx-auto">
+         <a class="text-sm text-white bg-emerald-700 hover:bg-emerald-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 w-full h-full rounded-md px-3.5 py-3.5 flex items-center justify-center" href="/gershman">
+          <div>
+           <h5 class="text-center text-l font-normal tracking-tight">
+            Speaker Series
+           </h5>
+           <h5 class="text-center text-xl font-normal tracking-tight">
+            Sam Gershman
+           </h5>
+           <h5 class="text-center mb-2 text-xl font-normal tracking-tight">
+            RL and Computational Neuroscience
+           </h5>
+           <p class="text-center">
+            2024-01-31
+            <br/>
+            7:00 pm
+            <br/>
+            Sever 106
+           </p>
+          </div>
+         </a>
+        </div>
+       </div>
+       <div class="col-span-1">
+        <div class="w-full h-full leading-7 text-slate-200 lg:max-w-2xl lg:mx-auto">
+         <a class="text-sm text-white hover:bg-rose-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-900 w-full h-full rounded-md bg-rose-900 px-3.5 py-3.5 flex items-center justify-center" href="/wendell2023">
+          <div>
+           <h5 class="text-center text-l font-normal tracking-tight">
+            Wendell AI Fellowship
+           </h5>
+           <h5 class="text-center mb-2 text-2xl font-normal tracking-tight">
+            Reinforcement Learning
+           </h5>
+           <p class="text-center">
+            2023-11-09
+            <br/>
+            8:00 pm
+            <br/>
+            Sever 109
+           </p>
+          </div>
+         </a>
+        </div>
+       </div>
+       <div class="col-span-1">
+        <div class="w-full h-full leading-7 text-slate-200 lg:max-w-2xl lg:mx-auto">
+         <a class="text-sm text-white hover:bg-rose-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-900 w-full h-full rounded-md bg-rose-900 px-3.5 py-3.5 flex items-center justify-center" href="/wendell2023">
+          <div>
+           <h5 class="text-center text-l font-normal tracking-tight">
+            Wendell AI Fellowship
+           </h5>
+           <h5 class="text-center mb-2 text-2xl font-normal tracking-tight">
+            Neural Networks
+           </h5>
+           <p class="text-center">
+            2023-10-26
+            <br/>
+            7:30 pm
+            <br/>
+            Sever 109
+           </p>
+          </div>
+         </a>
+        </div>
+       </div>
+       <div class="col-span-1">
+        <div class="w-full h-full leading-7 text-slate-200 lg:max-w-2xl lg:mx-auto">
+         <a class="text-sm text-white hover:bg-rose-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-900 w-full h-full rounded-md bg-rose-900 px-3.5 py-3.5 flex items-center justify-center" href="/wendell2023">
+          <div>
+           <h5 class="text-center text-l font-normal tracking-tight">
+            Wendell AI Fellowship
+           </h5>
+           <h5 class="text-center mb-2 text-2xl font-normal tracking-tight">
+            Computer Vision
+           </h5>
+           <p class="text-center">
+            2023-10-12
+            <br/>
+            8:00 pm
+            <br/>
+            Sever 109
+           </p>
+          </div>
+         </a>
+        </div>
+       </div>
+       <div class="col-span-1">
+        <div class="w-full h-full leading-7 text-slate-200 lg:max-w-2xl lg:mx-auto">
+         <a class="text-sm text-white hover:bg-rose-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-900 w-full h-full rounded-md bg-rose-900 px-3.5 py-3.5 flex items-center justify-center" href="/wendell2023">
+          <div>
+           <h5 class="text-center text-l font-normal tracking-tight">
+            Wendell AI Fellowship
+           </h5>
+           <h5 class="text-center mb-2 text-2xl font-normal tracking-tight">
+            Intro Meeting
+           </h5>
+           <p class="text-center">
+            2023-09-28
+            <br/>
+            7:30 pm
+            <br/>
+            Sever 109
+           </p>
+          </div>
+         </a>
+        </div>
+       </div>
+       <div class="col-span-1">
+        <div class="w-full h-full leading-7 text-slate-200 lg:max-w-2xl lg:mx-auto">
+         <a class="text-sm text-white bg-indigo-600 hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-full h-full rounded-md px-3.5 py-3.5 flex items-center justify-center" href="/visionfellows2023">
+          <div>
+           <h5 class="text-center mb-2 text-2xl font-normal tracking-tight">
+            2023 Vision Fellowship
+           </h5>
+           <p class="text-center">
+            Summer 2023
+           </p>
+          </div>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="FooterPlaceholder">
+   </div>
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+  </script>
+  <script defer="" src="header.js" type="text/javascript">
+  </script>
+  <link href="no-scrollbar.css" rel="stylesheet"/>
+  <title>
+   Vision Fellows | HCS AI Group
+  </title>
+ </head>
+ <body class="bg-gray-900 text-slate-200 no-scrollbar hidden">
+  <div>
+   <div id="HeaderPlaceholder">
+   </div>
+   <div class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+     <svg aria-hidden="true" class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]">
+      <defs>
+       <pattern height="200" id="e813992c-7d03-4cc4-a2bd-151760b470a0" patternunits="userSpaceOnUse" width="200" x="50%" y="-1">
+        <path d="M100 200V.5M.5 .5H200" fill="none">
+        </path>
+       </pattern>
+      </defs>
+      <svg class="overflow-visible fill-gray-800" x="50%" y="-1">
+       <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0">
+       </path>
+      </svg>
+      <rect class="opacity-50" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" height="100%" stroke-width="0" width="100%">
+      </rect>
+     </svg>
+    </div>
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-1 lg:items-start lg:gap-y-10">
+     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
+      <div class="">
+       <div class="lg:max-w-2xl lg:mx-auto">
+        <h1 class="text-center mt-2 text-3xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+         About Us
+        </h1>
+       </div>
+      </div>
+     </div>
+     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
+      <div class="">
+       <div class="text-base leading-7 text-slate-200 lg:max-w-2xl lg:mx-auto">
+        <p>
+         This group is dedicated to exploring, discussing, and implementing the cutting edge of intelligence advancements and their impacts on society. In doing so, it aims to be the launching place for anyone interested in engaging in AI as part of the broader mission of HCS, whether from a perspective, a policy angle, or interdisciplinary approaches. We will be hosting a variety of events to dive into the implications of AI on the future, technical implementations of important developments, and cutting-edge research with appearances from leading figures in various fields. HCS is a student-run organization of Harvard College.
+        </p>
+        <p class="mt-4">
+         Our priority is to remain open and accessible both for those who have little experience and come from other backgrounds, as well as those more advanced and technically-inclined. Based on interests, we will continually update and design new topics and events to be as close to up-to-date as possible.
+         <u>
+          <a href="https://forms.gle/ex2o7jb63sMeTvK66">
+           Sign up to join the mailing list and stay in the loop!
+          </a>
+         </u>
+        </p>
+        <p class="mt-4">
+         Note: we are currently transitioning and upgrading our site, and you may see repeated information on both sites.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="FooterPlaceholder">
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+  </script>
+  <script defer="" src="header.js" type="text/javascript">
+  </script>
+  <script defer="" src="slideshow.js" type="text/javascript">
+  </script>
+  <link href="no-scrollbar.css" rel="stylesheet"/>
+  <link href="slideshow.css" rel="stylesheet"/>
+  <title>
+   2024 AI Spring Tour | HCS AI Group
+  </title>
+ </head>
+ <body class="bg-gray-900 text-slate-200 no-scrollbar hidden">
+  <div>
+   <div id="HeaderPlaceholder">
+   </div>
+   <div class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+     <svg aria-hidden="true" class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]">
+      <defs>
+       <pattern height="200" id="e813992c-7d03-4cc4-a2bd-151760b470a0" patternunits="userSpaceOnUse" width="200" x="50%" y="-1">
+        <path d="M100 200V.5M.5 .5H200" fill="none">
+        </path>
+       </pattern>
+      </defs>
+      <svg class="overflow-visible fill-gray-800" x="50%" y="-1">
+       <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0">
+       </path>
+      </svg>
+      <rect class="opacity-50" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" height="100%" stroke-width="0" width="100%">
+      </rect>
+     </svg>
+    </div>
+    <!-- Body -->
+    <div class="grid grid-cols-1 justify-items-center">
+     <div class="w-11/12 max-w-screen-xl">
+      <h1 class="text-center text-5xl font-bold tracking-tight text-slate-200">
+       2024 AI Spring Tour
+      </h1>
+      <div class="mt-16 grid lg:grid-cols-2 grid-cols-1 justify-items-center gap-16">
+       <div class="col-span-1">
+        <div class="grid grid-cols-1 justify-items-center">
+         <div class="space-y-2">
+          <p class="text-base leading-7 text-slate-200">
+           The AI Spring Tour is an annual trip organized by the HCS AI Group to bring Harvard undergraduate students to engage with prominent companies working on AI in the Bay Area. This year, 14 students concentrating in fields ranging from computer science and math to government and economics went on the trip and had the chance to meet with researchers, engineers, venture capitalists, and managers at
+           <u>
+            OpenAI, Anthropic, Robust Intelligence, SoftBank, and General Catalyst
+           </u>
+           .
+          </p>
+          <p class="text-base leading-7 text-slate-200">
+           Our trip took place during spring break this year (from March 10 to March 12) and was filled with exciting discussions. We got a first-person glimpse into the fast-paced culture required to drive cutting-edge AI development in industry and discussed a variety of timely topics, including
+           <u>
+            the future of AI, sustainable computing, and the need for interpretable models
+           </u>
+           .
+          </p>
+          <p class="text-base leading-7 text-slate-200">
+           To make the trip as accessible as possible,
+           <u>
+            the HCS AI Group funds the majority of the trip
+           </u>
+           , so the price is heavily subsidized for each attendee. Unfortunately, that means we can only accept a small fraction of applicants.
+          </p>
+         </div>
+         <!-- 
+              <div class="mt-16">
+                <h1 class="text-center text-5xl font-bold tracking-tight text-slate-200">Apply</h1>
+                <p class="mt-8 text-center text-base leading-7 text-slate-200">
+                  Applications are closed for this year’s (2024) trip, but will reopen in October for the 2025 iteration!
+                </p>
+              </div>
+              
+              <div class="mt-16">
+                <h1 class="text-center text-5xl font-bold tracking-tight text-slate-200">Directors</h1>
+                <p class="mt-8 text-center text-base leading-7 text-slate-200">
+                  Erik Wang, Physics & Applied Mathematics AB/SM ‘25<br> 
+                  Andrew Lu, Computer Science & Economics AB/SM ‘25<br>
+                  Wency Suo, Computer Science & English AB ‘27<br>
+                  Lia Zheng, Computer Science AB ‘27
+                </p>
+              </div> -->
+        </div>
+       </div>
+       <div class="col-span-1 lg:col-start-2 w-full">
+        <!-- <div class="grid md:grid-cols-2 grid-cols-1 justify-items-center gap-4">
+              <img class="w-full rounded-xl bg-gray-900 shadow-xl" src="/content/2024AISpringTour/image01.png" alt="">
+              <img class="w-full rounded-xl bg-gray-900 shadow-xl" src="/content/2024AISpringTour/image02.png" alt="">
+              <img class="w-full rounded-xl bg-gray-900 shadow-xl" src="/content/2024AISpringTour/image03.png" alt="">
+              <img class="w-full rounded-xl bg-gray-900 shadow-xl" src="/content/2024AISpringTour/image05.png" alt="">
+              <img class="w-full rounded-xl bg-gray-900 shadow-xl" src="/content/2024AISpringTour/image06.png" alt="">
+              <img class="w-full rounded-xl bg-gray-900 shadow-xl" src="/content/2024AISpringTour/image04.png" alt="">
+            </div> -->
+        <!-- Slideshow container -->
+        <div class="slideshow-container w-full h-96">
+         <!-- Full-width images with number and caption text -->
+         <div class="mySlides fade h-full">
+          <!-- <div class="numbertext">1 / 6</div> -->
+          <div class="flex justify-center items-center h-full">
+           <img class="h-full object-center object-scale-down" src="/content/2024AISpringTour/image01.png"/>
+          </div>
+          <!-- <div class="text">Caption Text</div> -->
+         </div>
+         <div class="mySlides fade h-full">
+          <!-- <div class="numbertext">2 / 6</div> -->
+          <div class="flex justify-center items-center h-full">
+           <img class="h-full object-center object-scale-down" src="/content/2024AISpringTour/image02.png"/>
+          </div>
+          <!-- <div class="text">Caption Two</div> -->
+         </div>
+         <div class="mySlides fade h-full">
+          <!-- <div class="numbertext">3 / 6</div> -->
+          <div class="flex justify-center items-center h-full">
+           <img class="h-full object-center object-scale-down" src="/content/2024AISpringTour/image03.png"/>
+          </div>
+          <!-- <div class="text">Caption Three</div> -->
+         </div>
+         <div class="mySlides fade h-full">
+          <!-- <div class="numbertext">4 / 6</div> -->
+          <div class="flex justify-center items-center h-full">
+           <img class="h-full object-center object-scale-down" src="/content/2024AISpringTour/image04.png"/>
+          </div>
+          <!-- <div class="text">Caption Text</div> -->
+         </div>
+         <div class="mySlides fade h-full">
+          <!-- <div class="numbertext">5 / 6</div> -->
+          <div class="flex justify-center items-center h-full">
+           <img class="h-full object-center object-scale-down" src="/content/2024AISpringTour/image05.png"/>
+          </div>
+          <!-- <div class="text">Caption Two</div> -->
+         </div>
+         <div class="mySlides fade h-full">
+          <!-- <div class="numbertext">6 / 6</div> -->
+          <div class="flex justify-center items-center h-full">
+           <img class="h-full object-center object-scale-down" src="/content/2024AISpringTour/image06.png"/>
+          </div>
+          <!-- <div class="text">Caption Three</div> -->
+         </div>
+         <!-- Next and previous buttons -->
+         <a class="prev" onclick="plusSlides(-1)">
+          ❮
+         </a>
+         <a class="next" onclick="plusSlides(1)">
+          ❯
+         </a>
+        </div>
+        <br/>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)">
+         </span>
+         <span class="dot" onclick="currentSlide(2)">
+         </span>
+         <span class="dot" onclick="currentSlide(3)">
+         </span>
+         <span class="dot" onclick="currentSlide(4)">
+         </span>
+         <span class="dot" onclick="currentSlide(5)">
+         </span>
+         <span class="dot" onclick="currentSlide(6)">
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="grid grid-cols-1 justify-items-center">
+       <div class="mt-16">
+        <h1 class="text-center text-5xl font-bold tracking-tight text-slate-200">
+         Apply
+        </h1>
+        <p class="mt-8 text-center text-base leading-7 text-slate-200">
+         Applications are closed for this year’s (2024) trip, but will reopen in October for the 2025 iteration!
+        </p>
+       </div>
+       <div class="mt-16">
+        <h1 class="text-center text-5xl font-bold tracking-tight text-slate-200">
+         Directors
+        </h1>
+        <p class="mt-8 text-center text-base leading-7 text-slate-200">
+         Erik Wang, Physics &amp; Applied Mathematics AB/SM ‘25
+         <br/>
+         Andrew Lu, Computer Science &amp; Economics AB/SM ‘25
+         <br/>
+         Wency Suo, Computer Science &amp; English AB ‘27
+         <br/>
+         Lia Zheng, Computer Science AB ‘27
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="FooterPlaceholder">
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+  </script>
+  <script defer="" src="header.js" type="text/javascript">
+  </script>
+  <link href="no-scrollbar.css" rel="stylesheet"/>
+  <title>
+   Speaker Series | HCS AI Group
+  </title>
+ </head>
+ <body class="bg-gray-900 text-slate-200 no-scrollbar hidden">
+  <div>
+   <div id="HeaderPlaceholder">
+   </div>
+   <div class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+     <svg aria-hidden="true" class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]">
+      <defs>
+       <pattern height="200" id="e813992c-7d03-4cc4-a2bd-151760b470a0" patternunits="userSpaceOnUse" width="200" x="50%" y="-1">
+        <path d="M100 200V.5M.5 .5H200" fill="none">
+        </path>
+       </pattern>
+      </defs>
+      <svg class="overflow-visible fill-gray-800" x="50%" y="-1">
+       <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0">
+       </path>
+      </svg>
+      <rect class="opacity-50" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" height="100%" stroke-width="0" width="100%">
+      </rect>
+     </svg>
+    </div>
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-1 lg:items-start lg:gap-y-10">
+     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
+      <div class="">
+       <div class="lg:max-w-2xl lg:mx-auto">
+        <h1 class="mt-2 text-3xl font-bold tracking-tight text-slate-200 sm:text-4xl">
+         Speaker Series:
+        </h1>
+        <h1 class="mt-2 text-xl font-bold tracking-tight text-slate-200 sm:text-xl">
+         Algorithms and ML for Computational Social Policy
+        </h1>
+       </div>
+      </div>
+     </div>
+     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
+      <div class="">
+       <div class="max-w-xl text-base leading-7 text-slate-200 lg:max-w-2xl lg:mx-auto">
+        <img alt="" class="w-[36rem] max-w-100 rounded-xl bg-gray-900 shadow-xl ring-4 ring-gray-200/10" src="/content/socialpolicy.png"/>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+  </script>
+  <script defer="" src="header.js" type="text/javascript">
+  </script>
+  <link href="no-scrollbar.css" rel="stylesheet"/>
+  <title>
+   Speaker Series | HCS AI Group
+  </title>
+ </head>
+ <body class="bg-gray-900 text-slate-200 no-scrollbar hidden">
+  <div>
+   <div id="HeaderPlaceholder">
+   </div>
+   <div class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+     <svg aria-hidden="true" class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]">
+      <defs>
+       <pattern height="200" id="e813992c-7d03-4cc4-a2bd-151760b470a0" patternunits="userSpaceOnUse" width="200" x="50%" y="-1">
+        <path d="M100 200V.5M.5 .5H200" fill="none">
+        </path>
+       </pattern>
+      </defs>
+      <svg class="overflow-visible fill-gray-800" x="50%" y="-1">
+       <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0">
+       </path>
+      </svg>
+      <rect class="opacity-50" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" height="100%" stroke-width="0" width="100%">
+      </rect>
+     </svg>
+    </div>
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-1 lg:items-start lg:gap-y-10">
+     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
+      <div class="">
+       <div class="lg:max-w-2xl lg:mx-auto">
+        <h1 class="mt-2 text-3xl font-bold tracking-tight text-slate-200 sm:text-4xl">
+         Speaker Series: Sam Gershman
+        </h1>
+        <h1 class="mt-2 text-xl font-bold tracking-tight text-slate-200 sm:text-xl">
+         RL and Computational Neuroscience
+        </h1>
+       </div>
+      </div>
+     </div>
+     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
+      <div class="">
+       <div class="max-w-xl text-base leading-7 text-slate-200 lg:max-w-2xl lg:mx-auto">
+        <img alt="" class="w-[36rem] max-w-100 rounded-xl bg-gray-900 shadow-xl ring-4 ring-gray-200/10" src="/content/Gershman.jpg"/>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+  </script>
+  <script defer="" src="header.js" type="text/javascript">
+  </script>
+  <link href="no-scrollbar.css" rel="stylesheet"/>
+  <!-- <title>Wendell AI Fellowship Info Meeting | HCS AI Group</title> -->
+  <title>
+   Wendell AI Fellowship | HCS AI Group
+  </title>
+ </head>
+ <body class="bg-gray-900 text-slate-200 no-scrollbar hidden">
+  <div>
+   <div id="HeaderPlaceholder">
+   </div>
+   <div class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+     <svg aria-hidden="true" class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]">
+      <defs>
+       <pattern height="200" id="e813992c-7d03-4cc4-a2bd-151760b470a0" patternunits="userSpaceOnUse" width="200" x="50%" y="-1">
+        <path d="M100 200V.5M.5 .5H200" fill="none">
+        </path>
+       </pattern>
+      </defs>
+      <svg class="overflow-visible fill-gray-800" x="50%" y="-1">
+       <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0">
+       </path>
+      </svg>
+      <rect class="opacity-50" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" height="100%" stroke-width="0" width="100%">
+      </rect>
+     </svg>
+    </div>
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-0 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-0">
+     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+      <div class="lg:pr-4">
+       <div class="lg:max-w-lg">
+        <p class="text-base font-semibold leading-7 text-indigo-500">
+         PROGRAM
+        </p>
+        <!-- <h1 class="mt-2 text-3xl font-bold tracking-tight text-slate-200 sm:text-4xl">Wendell AI Fellowship<br>Intro Meeting</h1> -->
+        <h1 class="mb-10 mt-2 text-3xl font-bold tracking-tight text-slate-200 sm:text-4xl">
+         Wendell AI Fellowship
+        </h1>
+        <!-- <p class="mt-6 text-xl leading-8 text-slate-200">September 28, 7:30pm in Sever 109</p> -->
+       </div>
+      </div>
+     </div>
+     <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-3 lg:row-start-1 lg:overflow-hidden">
+      <img alt="" class="w-[36rem] max-w-100 rounded-xl bg-gray-900 shadow-xl ring-4 ring-gray-200/10" src="/content/wendellinfo2023.jpg"/>
+     </div>
+     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+      <div class="lg:pr-4">
+       <div class="max-w-xl text-base leading-7 text-slate-200 lg:max-w-lg">
+        <!-- <p class="mb-6">HCS AI Group is excited to share that the Wendell AI Fellowship introductory meeting will be this Thursday, September 28, at 7:30 pm in Sever 109.</p> -->
+        <p class="mb-6">
+         The Wendell AI Fellowship for All, a first-of-its-kind bootcamp dedicated to teaching AI / ML to humanities, social science, pre-med, and STEM concentrators accessibly and rigorously — emphasis on real-world impact and project-based learning, and zero CS experience necessary.
+        </p>
+        <p class="mb-6">
+         The fellowship will cover theoretical and practical AI and is designed to provide cutting-edge education directly from academic and industry research to all, from newcomers to researchers in AI and from CompLit to CS concentrators. If you are interested in participating, please join us at
+         <a class="text-blue-400" href="https://bit.ly/hcsaiwendell">
+          https://bit.ly/hcsaiwendell
+         </a>
+         .
+        </p>
+        <p class="mb-6">
+         All are welcome to join our fellowship, and filling out this form will add you to the Fellowship list. We look forward to talking with you.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+  </script>
+  <script defer="" src="header.js" type="text/javascript">
+  </script>
+  <link href="no-scrollbar.css" rel="stylesheet"/>
+  <title>
+   Vision Fellows | HCS AI Group
+  </title>
+ </head>
+ <body class="bg-gray-900 text-slate-200 no-scrollbar hidden">
+  <div>
+   <div id="HeaderPlaceholder">
+   </div>
+   <div class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+     <svg aria-hidden="true" class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]">
+      <defs>
+       <pattern height="200" id="e813992c-7d03-4cc4-a2bd-151760b470a0" patternunits="userSpaceOnUse" width="200" x="50%" y="-1">
+        <path d="M100 200V.5M.5 .5H200" fill="none">
+        </path>
+       </pattern>
+      </defs>
+      <svg class="overflow-visible fill-gray-800" x="50%" y="-1">
+       <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0">
+       </path>
+      </svg>
+      <rect class="opacity-50" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" height="100%" stroke-width="0" width="100%">
+      </rect>
+     </svg>
+    </div>
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none lg:grid-cols-1 lg:items-start lg:gap-y-10">
+     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
+      <div class="">
+       <div class="lg:max-w-2xl lg:mx-auto">
+        <p class="text-base font-semibold leading-7 text-indigo-500">
+         ANNOUNCING
+        </p>
+        <h1 class="mt-2 text-3xl font-bold tracking-tight text-slate-200 sm:text-4xl">
+         2023 Vision Fellowship
+        </h1>
+        <p class="mt-6 text-xl leading-8 text-slate-200">
+         Apply by May 10, 2023. Available at
+         <a class="text-blue-400" href="https://bit.ly/visionfellows">
+          bit.ly/visionfellows
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
+      <div class="">
+       <div class="max-w-xl text-base leading-7 text-slate-200 lg:max-w-2xl lg:mx-auto">
+        <p>
+         The Vision Fellowship is a program run by the Harvard Computer Society AI Group and Harvard Undergraduate Machine Intelligence Community that promotes independent initiatives in AI and machine learning for personal learning and broader impact. Fellows primarily pursue their work independently but are part of the fellowship community, which seeks to engage members across subfields relevant to AI. The fellowship serves as a way for those interested in AI to do their work, but now with a larger support network and greater resources.
+        </p>
+        <p class="mt-4">
+         This year, we are offering two tracks for Summer 2023, beginning May 22. Successful fellows will have access to funding for projects (e.g., compute credits, research materials). The fellowship expects a commitment of 5-10 hours per week for project progress and regular remote fellows group discussion/meetings. Those more heavily involved in projects, such as in research at Harvard or startups are also welcome. AI experience is not needed to apply.
+        </p>
+        <ul class="mt-8 space-y-8 text-slate-200" role="list">
+         <li class="flex gap-x-3">
+          <svg aria-hidden="true" class="mt-1 h-5 w-5 flex-none text-indigo-600" fill="currentColor" viewbox="0 0 22 22">
+           <path d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" stroke-linecap="round" stroke-linejoin="round">
+           </path>
+          </svg>
+          <div class="flex flex-col space-y-2">
+           <span>
+            <strong class="font-semibold text-slate-200">
+             Track 1: Project
+            </strong>
+           </span>
+           <span>
+            The Project track is an opportunity for Harvard students with an idea for personal projects in AI/ML to develop, research, and/or research. Ideas may be technical in nature, developing specific models, apps, or proofs of concept, or they may be nontechnical, researching the effects of AI on the economy, policy, or the future. This group will have biweekly fellows group meetings/discussions. Projects related to the Harvard-community, such as an application that is usable by Harvard students, or research on topics with relevance to Harvard broadly will be prioritized, though all projects are welcome.
+           </span>
+          </div>
+         </li>
+         <li class="flex gap-x-3">
+          <svg aria-hidden="true" class="mt-1 h-5 w-5 flex-none text-indigo-600" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 22 22">
+           <path d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round">
+           </path>
+          </svg>
+          <div class="flex flex-col space-y-2">
+           <span>
+            <strong class="font-semibold text-slate-200">
+             Track 2: Development
+            </strong>
+           </span>
+           <span>
+            The Development track is an opportunity to learn more about AI fundamentals in a collaborative environment. This track will use a custom curriculum focused on the topic of reinforcement learning (RL), which includes both theoretical and practical components. This group will meet weekly to discuss the material, and may include competitions with other fellows. Fellows may also opt to create or choose their own development plan, to be submitted with the application.
+           </span>
+          </div>
+         </li>
+        </ul>
+        <p class="mt-6">
+         Applications for the Vision Fellowship open April 27, 2023 and close May 10, 2023. Applicants will be notified in the following week.
+        </p>
+        <p class="mt-6 text-lg">
+         Application link:
+         <a class="text-blue-400" href="https://bit.ly/visionfellows">
+          bit.ly/visionfellows
+         </a>
+         .
+        </p>
+        <h2 class="mt-6 text-2xl font-bold tracking-tight text-slate-200">
+         Questions?
+        </h2>
+        <p class="mt-4">
+         Contact us at
+         <a class="text-blue-400" href="mailto:hcsaigroup@gmail.com">
+          hcsaigroup@gmail.com
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,7 @@
+What is a short, two-sentence summary of the club's purpose, mission, or objective?
+
+Categorize this organization into exactly 1 of the following categories: SPORTS, ACADEMIC, PRE-PROFESSIONAL, RELIGIOUS/CULTURAL, COMMUNITY, EXTRACURRICULAR.
+
+Generate a list of up to (but possibly less than) 10 keywords that represent this organization.
+
+When is the club's next meeting or meeting schedule if today's date is {INSERT_DATE}?
